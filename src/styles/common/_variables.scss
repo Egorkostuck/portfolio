@@ -1,0 +1,26 @@
+// Transitions
+$transition-duration-default: 0.3s;
+$transition-delay-default: 0.3s;
+$transition-default: 0.3s ease-in-out;
+
+// Html font size
+$html-font-size: 10;
+$html-font-size-sm: 8;
+
+//responsive for ios
+$responsive-ios: 812px;
+
+// Breakpoints
+$breakpoints: (
+    mobile-small: 575px,
+    mobile: 767px,
+    tablet: 1023px,
+    small-desktop: 1279px,
+    desktop: 1439px,
+    large-desktop: 1719px,
+);
+
+// Fonts
+//$century-gothic: 'Century Gothic';
+//$gotham: 'Gotham';
+//$inter: 'Inter';

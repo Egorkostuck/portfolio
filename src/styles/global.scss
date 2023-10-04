@@ -1,0 +1,27 @@
+@import "./common/functions";
+@import "./common/variables";
+@import "./common/mixin";
+
+:root {
+    --white: #F6F6F4;
+    --white-20: #EBEBEB;
+    --white-rgb: 246, 246, 244;
+    --white-light: #FFF;
+    --dark: #323232;
+    --dark-RGB: 50, 50, 50;
+    --yellow: #ECBC55;
+    --grey: #808080;
+    --grey-RGB: 128, 128, 128;
+    --grey-white: #E2E2E1;
+    --error: #d3000c;
+}
+
+@layer reset {
+    @import "./common/normalize";
+}
+
+@layer common {
+    @import "./common/base";
+}
+
+@layer reset common component section;

@@ -1,0 +1,23 @@
+@import "src/styles/common/variables";
+@import "src/styles/common/functions";
+@import "src/styles/common/mixin";
+
+@layer component {
+    .sub-title {
+        font-family: $open-sans;
+        font-size: rem(60);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: var(--white);
+        text-transform: uppercase;
+
+        @include breakpoint-down(tablet) {
+            font-size: rem(44);
+        }
+
+        @include breakpoint-down(mobile) {
+            font-size: rem(24);
+        }
+    }
+}

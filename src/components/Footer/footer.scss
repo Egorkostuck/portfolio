@@ -1,0 +1,202 @@
+@import "src/styles/common/variables";
+@import "src/styles/common/functions";
+@import "src/styles/common/mixin";
+
+@layer component {
+    .footer {
+        &__wrapper {
+            position: relative;
+            padding-top: rem(177);
+            padding-bottom: rem(20);
+
+            @include breakpoint-down(large-desktop) {
+                padding-top: rem(147);
+            }
+
+            @include breakpoint-down(small-desktop) {
+                padding-top: rem(97);
+            }
+
+            @include breakpoint-down(tablet) {
+                padding-top: rem(57);
+            }
+
+            @include breakpoint-down(mobile) {
+                padding-top: rem(47);
+            }
+
+            .sub-title {
+                padding-left: rem(66);
+
+                @include breakpoint-down(tablet) {
+                    padding-left: rem(26);
+                }
+            }
+        }
+
+        &__content {
+            padding-left: rem(66);
+
+            @include breakpoint-down(tablet) {
+                padding-left: rem(26);
+            }
+
+            @include breakpoint-down(mobile) {
+                padding-left: 0;
+            }
+        }
+
+        .form {
+            margin-right: rem(67);
+            min-width: 617px;
+            min-height: 607px;
+        }
+
+        .text-content {
+            margin-bottom: rem(85);
+            color: var(--grey-white);
+            font-family: $open-sans;
+            font-size: rem(30);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+
+            @include breakpoint-down(small-desktop) {
+                margin-bottom: rem(65);
+                font-size: rem(24);
+            }
+
+            @include breakpoint-down(tablet) {
+                margin-bottom: rem(45);
+                font-size: rem(18);
+            }
+
+            @include breakpoint-down(mobile) {
+                margin-bottom: rem(25);
+                font-size: rem(14);
+            }
+
+            b {
+                color: var(--gold);
+                font-weight: 400;
+            }
+        }
+
+        .contact {
+            .section-title {
+                margin-bottom: rem(23);
+                color: var(--white);
+                font-family: $open-sans;
+                font-size: rem(30);
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1;
+
+                @include breakpoint-down(tablet) {
+                    font-size: rem(20);
+                }
+            }
+
+            &-list {
+                display: grid;
+                grid-auto-columns: 1fr;
+                grid-auto-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 36px 57px;
+                grid-template-areas:
+                ". ."
+                ". .";
+
+                @include breakpoint-down(mobile) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: rem(20);
+
+                    .contact-link {
+                        width: 100%;
+                        max-width: rem(320);
+                    }
+                }
+            }
+
+            &-link {
+                @include breakpoint-down(tablet) {
+                    .text {
+                        font-size: rem(20);
+                    }
+
+                    .icon-wrap {
+                        width: rem(45);
+                        height: rem(45);
+                    }
+                }
+
+                @include breakpoint-down(mobile) {
+                    .text {
+                        font-size: rem(18);
+                    }
+
+                    .icon-wrap {
+                        width: rem(30);
+                        height: rem(30);
+                    }
+                }
+            }
+        }
+
+        &__copyright {
+            margin-top: rem(54);
+            padding: rem(14) rem(16);
+            position: relative;
+            background-color: var(--gold);
+            text-align: center;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 1px;
+                width: 100%;
+                height: rem(52);
+                background-image: url("./../../assets/images/icons/wave-top-gold.svg");
+                background-repeat: repeat;
+                background-size: cover;
+                background-position: bottom 0 left 0;
+                transform: translateY(-100%);
+
+                @include breakpoint-up(xl-large-desktop) {
+                    height: rem(82);
+                }
+
+                @include breakpoint-down(tablet) {
+                    height: rem(32);
+                }
+
+                @include breakpoint-down(mobile) {
+                    height: rem(22);
+                }
+            }
+
+            .text {
+                color: var(--black);
+                font-family: $open-sans;
+                font-size: rem(24);
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+                @include breakpoint-down(tablet) {
+                    font-size: rem(18);
+                }
+
+                @include breakpoint-down(mobile) {
+                    font-size: rem(12);
+                }
+
+            }
+        }
+    }
+}

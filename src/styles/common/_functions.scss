@@ -20,7 +20,3 @@
 @function rem($pxValue) {
     @return math.div($pxValue, $html-font-size) + rem;
 }
-
-@function rem_sm($pxValue) {
-    @return math.div($pxValue, $html-font-size-sm) + rem;
-}

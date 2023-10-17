@@ -1,15 +1,25 @@
 import React from 'react';
-import './App.css';
 import Home from "./pages/Home/Home";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          <Home/>
-      </header>
-    </div>
-  );
+    const mainStyle = {
+        minHeight: '1500px'
+    }
+    return (
+        <div className="App">
+            <div className="wrapper">
+                <Header />
+
+                <main style={mainStyle}>
+                    <Home/>
+                </main>
+
+                <Footer />
+            </div>
+        </div>
+    );
 }
 
 export default App;

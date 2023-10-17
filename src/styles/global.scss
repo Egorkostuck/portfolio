@@ -3,17 +3,15 @@
 @import "./common/mixin";
 
 :root {
-    --white: #F6F6F4;
-    --white-20: #EBEBEB;
-    --white-rgb: 246, 246, 244;
-    --white-light: #FFF;
-    --dark: #323232;
-    --dark-RGB: 50, 50, 50;
-    --yellow: #ECBC55;
-    --grey: #808080;
-    --grey-RGB: 128, 128, 128;
-    --grey-white: #E2E2E1;
+    --white: #FFFFFF;
+    --gold: #FEB32A;
+    --grey: #1E1E1E;
+    --grey-RGB: 30, 30, 30;
+    --grey-white: #919191;
+    --grey-white10: rgba(145, 145, 145, 0.1);
+    --grey-bg: #1E1E1E;
     --error: #d3000c;
+    --black: #000;
 }
 
 @layer reset {

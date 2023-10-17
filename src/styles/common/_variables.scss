@@ -18,9 +18,8 @@ $breakpoints: (
     small-desktop: 1279px,
     desktop: 1439px,
     large-desktop: 1719px,
+    xl-large-desktop: 1920px,
 );
 
 // Fonts
-//$century-gothic: 'Century Gothic';
-//$gotham: 'Gotham';
-//$inter: 'Inter';
+$open-sans: 'Open Sans', sans-serif;

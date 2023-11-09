@@ -1,21 +1,19 @@
-import React, {FC, JSX} from "react";
-import './sub-title.scss';
+import React, { JSX } from "react";
+import "./sub-title.scss";
 
 interface TProps {
-    title: string,
+  title: string;
 }
-const SubTitle: FC<TProps> = (prop: TProps): JSX.Element  => {
-    const {
-        title,
-    } = prop;
+const SubTitle: (prop: TProps) => React.JSX.Element = (
+  prop: TProps,
+): JSX.Element => {
+  const { title } = prop;
 
-    return (
-        <div className="sub-title">
-            <h3>
-                {title}
-            </h3>
-        </div>
-    )
-}
+  return (
+    <div className="sub-title">
+      <h3>{title}</h3>
+    </div>
+  );
+};
 
 export default SubTitle;

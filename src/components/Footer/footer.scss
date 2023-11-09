@@ -1,6 +1,6 @@
-@import "src/styles/common/variables";
-@import "src/styles/common/functions";
-@import "src/styles/common/mixin";
+@import 'src/styles/common/variables';
+@import 'src/styles/common/functions';
+@import 'src/styles/common/mixin';
 
 @layer component {
     .footer {
@@ -105,8 +105,8 @@
                 grid-template-rows: 1fr 1fr;
                 gap: 36px 57px;
                 grid-template-areas:
-                ". ."
-                ". .";
+                '. .'
+                '. .';
 
                 @include breakpoint-down(mobile) {
                     display: flex;
@@ -155,13 +155,13 @@
             text-align: center;
 
             &:before {
-                content: "";
+                content: '';
                 position: absolute;
                 left: 0;
                 top: 1px;
                 width: 100%;
                 height: rem(52);
-                background-image: url("./../../assets/images/icons/wave-top-gold.svg");
+                background-image: url('./../../assets/images/icons/wave-top-gold.svg');
                 background-repeat: repeat;
                 background-size: cover;
                 background-position: bottom 0 left 0;

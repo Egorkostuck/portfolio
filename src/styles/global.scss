@@ -1,6 +1,6 @@
-@import "./common/functions";
-@import "./common/variables";
-@import "./common/mixin";
+@import './common/functions';
+@import './common/variables';
+@import './common/mixin';
 
 :root {
     --white: #FFFFFF;
@@ -15,11 +15,11 @@
 }
 
 @layer reset {
-    @import "./common/normalize";
+    @import './common/normalize';
 }
 
 @layer common {
-    @import "./common/base";
+    @import './common/base';
 }
 
 @layer reset common component section;

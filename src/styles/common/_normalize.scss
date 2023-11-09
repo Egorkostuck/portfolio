@@ -80,11 +80,11 @@ svg:not(:root) {
 
 a,
 button,
-input[type="submit"],
-input[type="button"],
-input[type="reset"],
-input[type="file"],
-input[type="image"],
+input[type='submit'],
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='image'],
 label[for] {
     cursor: pointer;
 }
@@ -102,27 +102,27 @@ input::-moz-focus-inner {
     border: 0;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-input[type="color"],
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
 textarea,
-a[href^="tel"] {
+a[href^='tel'] {
     appearance: none;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
     appearance: none;
 }
 
@@ -178,13 +178,13 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #fff inset;
 }
 
-input[type="text"],
-input[type="button"],
-input[type="tel"],
-input[type="email"],
-input[type="submit"],
-input[type="date"],
-input[type="search"],
+input[type='text'],
+input[type='button'],
+input[type='tel'],
+input[type='email'],
+input[type='submit'],
+input[type='date'],
+input[type='search'],
 textarea {
     appearance: none;
 }

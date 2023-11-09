@@ -1,25 +1,30 @@
-import React from 'react';
+import React from "react";
 import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+export enum Sections {
+  header = "#header",
+  contact = "#contact",
+}
+
 function App() {
-    const mainStyle = {
-        minHeight: '1500px'
-    }
-    return (
-        <div className="App">
-            <div className="wrapper">
-                <Header />
+  const mainStyle = {
+    minHeight: "1500px",
+  };
+  return (
+    <div className="App">
+      <div className="wrapper">
+        <Header />
 
-                <main style={mainStyle}>
-                    <Home/>
-                </main>
+        <main style={mainStyle}>
+          <Home />
+        </main>
 
-                <Footer />
-            </div>
-        </div>
-    );
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default App;

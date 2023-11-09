@@ -1,6 +1,6 @@
-@import "src/styles/common/variables";
-@import "src/styles/common/functions";
-@import "src/styles/common/mixin";
+@import 'src/styles/common/variables';
+@import 'src/styles/common/functions';
+@import 'src/styles/common/mixin';
 
 @layer component {
     .header {
@@ -16,7 +16,7 @@
             transform: translateY(96%);
             width: 100%;
             height: rem(51);
-            background-image: url("../../assets/images/icons/wave-bottom-black.svg");
+            background-image: url('../../assets/images/icons/wave-bottom-black.svg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: top 0 left 0;

@@ -1,6 +1,6 @@
-@use "sass:math";
+@use 'sass:math';
 
-@import "./variables";
+@import './variables';
 
 @function breakpoint-next($name, $breakpoints: $breakpoints, $breakpoint-names: map-keys($breakpoints)) {
     $n: index($breakpoint-names, $name);

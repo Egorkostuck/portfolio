@@ -1,25 +1,25 @@
-@import './common/functions';
-@import './common/variables';
-@import './common/mixin';
-
-:root {
-    --white: #FFFFFF;
-    --gold: #FEB32A;
-    --grey: #1E1E1E;
-    --grey-RGB: 30, 30, 30;
-    --grey-white: #919191;
-    --grey-white10: rgba(145, 145, 145, 0.1);
-    --grey-bg: #1E1E1E;
-    --error: #d3000c;
-    --black: #000;
-}
+@import "./common/functions";
+@import "./common/variables";
+@import "./common/mixin";
 
 @layer reset {
-    @import './common/normalize';
+  @import "./common/normalize";
 }
 
 @layer common {
-    @import './common/base';
+  @import "./common/base";
 }
 
 @layer reset common component section;
+
+:root {
+  --white: #fff;
+  --gold: #feb32a;
+  --grey: #1e1e1e;
+  --grey-rgb: 30, 30, 30;
+  --grey-white: #919191;
+  --grey-white10: rgb(145 145 145 / 10%);
+  --grey-bg: #1e1e1e;
+  --error: #d3000c;
+  --black: #000;
+}

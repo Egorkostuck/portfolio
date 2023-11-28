@@ -12,7 +12,7 @@ interface TProps {
   title: string;
   src: string;
   iconId: string;
-  target?: string;
+  target?: Target;
 }
 
 const ContactLink: (prop: TProps) => React.JSX.Element = (

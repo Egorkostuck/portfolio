@@ -1,143 +1,143 @@
-@import 'src/styles/common/variables';
-@import 'src/styles/common/functions';
-@import 'src/styles/common/mixin';
+@import "src/styles/common/variables";
+@import "src/styles/common/functions";
+@import "src/styles/common/mixin";
 
 @layer component {
-    .header {
-        position: fixed;
+  .header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--black);
+
+    &::after {
+      @include breakpoint-up(xl-large-desktop) {
+        height: rem(81);
+      }
+
+      @include breakpoint-down(mobile) {
+        height: rem(21);
+      }
+
+      @include breakpoint-down(mobile-small) {
+        height: rem(15);
+      }
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(96%);
+
+      width: 100%;
+      height: rem(51);
+
+      background-image: url("../../assets/images/icons/wave-bottom-black.svg");
+      background-repeat: no-repeat;
+      background-position: top 0 left 0;
+      background-size: cover;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      @include breakpoint-down(small-desktop) {
+        max-width: rem(190);
+      }
+
+      @include breakpoint-down(tablet) {
+        padding-top: rem(9);
+      }
+
+      @include breakpoint-down(mobile) {
+        max-width: rem(150);
+        padding-top: rem(7);
+      }
+
+      @include breakpoint-down(mobile-small) {
+        max-width: rem(100);
+      }
+      padding-top: rem(29);
+      padding-bottom: rem(1);
+      color: var(--gold);
+      transition: color $transition-default;
+
+      svg {
         width: 100%;
-        background-color: var(--black);
+        fill: currentcolor;
+      }
 
-        &:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            transform: translateY(96%);
-            width: 100%;
-            height: rem(51);
-            background-image: url('../../assets/images/icons/wave-bottom-black.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: top 0 left 0;
+      @media (hover: hover) {
+        &:hover {
+          color: var(--white);
+        }
+      }
 
-            @include breakpoint-up(xl-large-desktop) {
-                height: rem(81);
+      @media (pointer: coarse) {
+        &:active {
+          color: var(--white);
+        }
+      }
+    }
+
+    &__nav {
+      .nav {
+        &-list {
+          @include breakpoint-down(small-desktop) {
+            gap: rem(50);
+          }
+
+          @include breakpoint-down(tablet) {
+            gap: rem(25);
+          }
+
+          @include breakpoint-down(mobile-small) {
+            gap: rem(15);
+          }
+          display: flex;
+          gap: rem(96);
+          align-items: center;
+        }
+
+        &-item {
+          a {
+            @include breakpoint-down(small-desktop) {
+              font-size: rem(20);
             }
 
             @include breakpoint-down(mobile) {
-                height: rem(21);
+              font-size: rem(12);
             }
 
             @include breakpoint-down(mobile-small) {
-                height: rem(15);
+              font-size: rem(9);
             }
-        }
-
-        &__content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        &__logo {
-            padding-top: rem(29);
-            padding-bottom: rem(1);
+            font-family: $open-sans;
+            font-size: rem(24);
+            font-weight: 700;
+            font-style: normal;
+            line-height: 1.375;
             color: var(--gold);
+            text-decoration: none;
+
             transition: color $transition-default;
 
-            @include breakpoint-down(small-desktop) {
-                max-width: rem(190);
-            }
-
-            @include breakpoint-down(tablet) {
-                padding-top: rem(9);
-            }
-
-            @include breakpoint-down(mobile) {
-                padding-top: rem(7);
-                max-width: rem(150);
-            }
-
-            @include breakpoint-down(mobile-small) {
-                max-width: rem(100);
-            }
-
-            svg {
-                fill: currentColor;
-                width: 100%;
-            }
-
             @media (hover: hover) {
-                &:hover {
-                    color: var(--white);
-                }
+              &:hover {
+                color: var(--white);
+              }
             }
 
             @media (pointer: coarse) {
-                &:active {
-                    color: var(--white);
-                }
+              &:active {
+                color: var(--white);
+              }
             }
+          }
         }
-
-        &__nav {
-            .nav {
-                &-list {
-                    display: flex;
-                    align-items: center;
-                    gap: rem(96);
-
-                    @include breakpoint-down(small-desktop) {
-                        gap: rem(50);
-                    }
-
-                    @include breakpoint-down(tablet) {
-                        gap: rem(25);
-                    }
-
-                    @include breakpoint-down(mobile-small) {
-                        gap: rem(15);
-                    }
-                }
-
-                &-item {
-                    a {
-                        color: var(--gold);
-                        font-family: $open-sans;
-                        font-size: rem(24);
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 1.375;
-                        text-decoration: none;
-                        transition: color $transition-default;
-
-                        @include breakpoint-down(small-desktop) {
-                            font-size: rem(20);
-                        }
-
-                        @include breakpoint-down(mobile) {
-                            font-size: rem(12);
-                        }
-
-                        @include breakpoint-down(mobile-small) {
-                            font-size: rem(9);
-                        }
-
-                        @media (hover: hover) {
-                            &:hover {
-                                color: var(--white);
-                            }
-                        }
-
-                        @media (pointer: coarse) {
-                            &:active {
-                                color: var(--white);
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }

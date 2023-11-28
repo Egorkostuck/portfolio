@@ -1,22 +1,35 @@
-@use 'sass:math';
+@use "sass:math";
+@use "sass:list";
+@use "sass:map";
 
-@import './variables';
+@import "./variables";
 
-@function breakpoint-next($name, $breakpoints: $breakpoints, $breakpoint-names: map-keys($breakpoints)) {
-    $n: index($breakpoint-names, $name);
-    @return if($n != null and $n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+@function breakpoint-next(
+  $name,
+  $breakpoints: $breakpoints,
+  $breakpoint-names: map-keys($breakpoints)
+) {
+  $n: list.index($breakpoint-names, $name);
+
+  @return if(
+    $n != null and $n < length($breakpoint-names),
+    nth($breakpoint-names, $n + 1),
+    null
+  );
 }
 
 @function breakpoint-min($name, $breakpoints: $breakpoints) {
-    $min: map-get($breakpoints, $name);
-    @return if($min != 0, $min + 0.5, null);
+  $min: map.get($breakpoints, $name);
+
+  @return if($min != 0, $min + 0.5, null);
 }
 
 @function breakpoint-max($name, $breakpoints: $breakpoints) {
-    $max: map-get($breakpoints, $name);
-    @return if($max != 0, $max, null);
+  $max: map.get($breakpoints, $name);
+
+  @return if($max != 0, $max, null);
 }
 
 @function rem($pxValue) {
-    @return math.div($pxValue, $html-font-size) + rem;
+  @return math.div($pxValue, $html-font-size) + rem;
 }

@@ -11,7 +11,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ."
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "lint:css": "stylelint src",
+    "lint:css:fix": "npm run lint:css -- --fix"
   },
   "prittier": {
     "printWidth": 100
@@ -50,6 +52,10 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.3",
     "sass": "^1.69.4",
+    "stylelint": "^15.11.0",
+    "stylelint-config-clean-order": "^5.2.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.1.0",
     "typescript": "*"
   }
 }

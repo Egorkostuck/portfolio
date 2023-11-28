@@ -7,20 +7,19 @@ $transition-default: 0.3s ease-in-out;
 $html-font-size: 10;
 $html-font-size-sm: 8;
 
-//responsive for ios
+// responsive for ios
 $responsive-ios: 812px;
 
 // Breakpoints
 $breakpoints: (
-    mobile-small: 575px,
-    mobile: 767px,
-    tablet: 1023px,
-    small-desktop: 1279px,
-    desktop: 1439px,
-    large-desktop: 1719px,
+  mobile-small: 575px,
+  mobile: 767px,
+  tablet: 1023px,
+  small-desktop: 1279px,
+  desktop: 1439px,
+  large-desktop: 1719px,
+  xl-large-desktop: 1920px,
 );
 
 // Fonts
-//$century-gothic: 'Century Gothic';
-//$gotham: 'Gotham';
-//$inter: 'Inter';
+$open-sans: "Open Sans", sans-serif;

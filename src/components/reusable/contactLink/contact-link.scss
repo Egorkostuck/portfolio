@@ -1,0 +1,79 @@
+@import "src/styles/common/variables";
+@import "src/styles/common/functions";
+@import "src/styles/common/mixin";
+
+@layer component {
+  .contact-link {
+    position: relative;
+
+    display: flex;
+    gap: rem(5);
+    align-items: center;
+    justify-content: space-between;
+
+    padding: rem(15) rem(32) rem(15) rem(36);
+
+    text-align: center;
+    text-decoration: none;
+
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: rem(45);
+    outline: none;
+
+    .text {
+      justify-self: center;
+
+      margin: 0 auto;
+
+      font-family: $open-sans;
+      font-size: rem(24);
+      font-weight: 600;
+      font-style: normal;
+      line-height: 1;
+      color: var(--gold);
+      text-align: center;
+
+      transition: color $transition-default;
+    }
+
+    .icon-wrap {
+      width: rem(60);
+      height: rem(60);
+      color: var(--gold);
+      transition: color $transition-default;
+
+      svg {
+        fill: currentcolor;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--gold);
+
+        .text {
+          color: var(--black);
+        }
+
+        .icon-wrap {
+          color: var(--black);
+        }
+      }
+    }
+
+    @media (pointer: coarse) {
+      &:active {
+        background-color: var(--gold);
+
+        .text {
+          color: var(--black);
+        }
+
+        .icon-wrap {
+          color: var(--black);
+        }
+      }
+    }
+  }
+}

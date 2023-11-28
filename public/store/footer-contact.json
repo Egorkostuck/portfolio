@@ -1,0 +1,33 @@
+{
+  "title": "Let’s be friends on:",
+  "items": [
+    {
+      "id": 1,
+      "srcType": "link",
+      "srcTitle": "Telegram",
+      "src": "https://t.me/egorkostuck",
+      "iconId": "icon-telegram"
+    },
+    {
+      "id": 2,
+      "srcType": "link",
+      "srcTitle": "LinkedIn",
+      "src": "https://www.linkedin.com/in/egor-kostyuk-24385a203/",
+      "iconId": "icon-linkedin"
+    },
+    {
+      "id": 3,
+      "srcType": "email",
+      "srcTitle": "Gmail",
+      "src": "egorkostuk.work@gmail.com",
+      "iconId": "icon-gmail"
+    },
+    {
+      "id": 4,
+      "srcType": "phone",
+      "srcTitle": "Phone",
+      "src": "+375295269174",
+      "iconId": "icon-phone"
+    }
+  ]
+}

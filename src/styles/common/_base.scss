@@ -38,6 +38,7 @@ body,
 
 main {
   flex: 1 1 auto;
+  margin-top: rem(100);
 }
 
 .container {
@@ -64,7 +65,7 @@ main {
 
 @include breakpoint-up(tablet) {
   .container {
-    max-width: rem_sm(880);
+    max-width: rem(880);
   }
 }
 

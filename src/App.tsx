@@ -1,7 +1,7 @@
 import React from "react";
-import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Hero from "./components/Hero/Hero";
 
 export enum Sections {
   header = "#header",
@@ -18,7 +18,7 @@ function App() {
         <Header />
 
         <main style={mainStyle}>
-          <Home />
+          <Hero />
         </main>
 
         <Footer />

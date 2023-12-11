@@ -12,7 +12,7 @@ export enum SourceType {
   email = "email",
 }
 
-type ContactItem = {
+export type ContactItem = {
   id: number;
   srcType: SourceType;
   srcTitle: string;
